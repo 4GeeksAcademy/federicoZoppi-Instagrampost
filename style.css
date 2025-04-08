@@ -1,11 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: black;
+  background-color: #000; /* como en la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.post{
-    background-color: white;
+.post {
+  background-color: #fff;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.post-head{
-    display: flex;
+/* ------------------ CABECERA ------------------ */
+.post-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-head h1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-head p {
+  font-size: 13px;
+  color: #666;
+  margin-left: 5px;
+}
+
+/* ------------------ IMAGEN ------------------ */
+.post-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------ ICONOS INFERIORES ------------------ */
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Agrupamos los tres primeros íconos en un contenedor */
+.post-icons .left-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.post-icons i:last-child {
+  margin-left: auto;
+}
+
+/* ------------------ CUERPO ------------------ */
+.post-body {
+  padding: 10px 15px;
+}
+
+.post-body p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.post-body p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 6px;
 }
