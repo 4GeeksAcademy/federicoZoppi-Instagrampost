@@ -6,28 +6,26 @@
 }
 
 body {
-  background-color: #000; /* como en la imagen */
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 120rem;
 }
 
 .post {
-  background-color: #fff;
-  width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
+  background-color: white;
+  width: 380px;
+  height: 500px;
 }
 
-/* ------------------ CABECERA ------------------ */
+
 .post-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  border-bottom: 1px solid #ddd;
+  
 }
 
 .iconos {
@@ -36,56 +34,40 @@ body {
   gap: 10px;
 }
 
+.post-head .fa-html5 {
+  font-size: 21px;
+}
+
 .post-head h1 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 .post-head p {
   font-size: 13px;
-  color: #666;
-  margin-left: 5px;
+  color: black;
 }
 
-/* ------------------ IMAGEN ------------------ */
 .post-img img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 270px;
+  
 }
 
-/* ------------------ ICONOS INFERIORES ------------------ */
 .post-icons {
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
-  font-size: 20px;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 
-/* Agrupamos los tres primeros íconos en un contenedor */
-.post-icons .left-icons {
-  display: flex;
-  gap: 12px;
-}
-
-.post-icons i:last-child {
-  margin-left: auto;
-}
-
-/* ------------------ CUERPO ------------------ */
 .post-body {
   padding: 10px 15px;
 }
 
 .post-body p {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #222;
-  margin-bottom: 6px;
+  font-size: 12px;
+  color: black;
+  margin-bottom: 13px;
 }
 
-.post-body p:first-of-type {
-  font-weight: bold;
-  margin-bottom: 6px;
-}
